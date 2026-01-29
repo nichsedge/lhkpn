@@ -10,7 +10,6 @@ wheels/
 .venv
 
 # Scraper output
-*.json
 *.csv
 *.png
 logs/
