@@ -40,7 +40,7 @@ class LHKPNScraper:
         Initialize the Playwright browser, context, and page.
         """
         logger.info("Initializing browser...")
-        self.browser = await playwright.chromium.launch(headless=self.headless)
+        self.browser = await playwright.chromium.launch(headless=self.headless, channel='chrome')
         self.context = await self.browser.new_context(
             viewport={'width': 1280, 'height': 800}
         )
